@@ -1,0 +1,30 @@
+# === Secrets — TUYỆT ĐỐI không commit ======================================
+.env
+.env.*
+!.env.example
+
+# Credential đã GIẢI MÃ — không bao giờ đưa lên Git.
+# (credentials/ chỉ được chứa file ĐÃ mã hóa từ `export:credentials --backup`.)
+*.decrypted.json
+credentials/*decrypted*
+credentials/*.plain.json
+
+# Encryption key nếu lỡ dump ra file
+*encryptionkey*
+*encryption-key*
+*.key
+*.pem
+
+# === Dữ liệu / volume cục bộ ================================================
+n8n_data/
+postgres_data/
+*.sqlite
+*.sqlite-*
+
+# === OS / editor ===========================================================
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+*.log
